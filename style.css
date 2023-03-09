@@ -1,0 +1,88 @@
+:root {
+  --bg: #101010;
+  --ab: #151515;
+  --fg: #D8D3D3;
+  --af: #424242;
+  --pr: #d8d3d3;
+}
+
+@font-face {
+  font-family: Font;
+  src: url("./JetBrainsMono-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Font, 'Sans';
+  transition: 0.5s ease;
+  text-decoration: none;
+  border-radius: 0.2em;
+  color: var(--fg);
+  outline: none;
+  border: none;
+}
+
+body {
+  min-height: 90vh;
+  margin: 5vh 5vw;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--bg);
+}
+
+input, button {
+  padding: 1em;
+}
+
+.main, .card, .login {
+  display: grid;
+  grid-gap: 1.5em;
+}
+
+.card, .login {
+  padding: 2em;
+  background-color: #151515;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+.dialog {
+  padding: 3em;
+  background-color: #151515;
+}
+
+.dialog, .login, button, input {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  grid-gap: 2em;
+  padding: 2em;
+}
+
+.card:hover {
+  background-color: #1c1c1c;
+}
+
+.card img {
+  border-radius: 100%;
+  height: 5em;
+}
+
+.card div {
+  padding: 0;
+  display: grid;
+  grid-gap: 0.5em;
+  align-content: center;
+}
+
+button, input {
+  font-size: 1em;
+  background-color: #1c1c1c;
+}
+
+button:hover {
+  background-color: #2c2c2c;
+}
