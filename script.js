@@ -16,6 +16,13 @@ if (localStorage.getItem("Followers") === null) {
   Followers = JSON.parse(localStorage.getItem("Followers"));
 }
 
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    save.click();
+  }
+}); 
+
 save.addEventListener('click', log_in)
 
 function log_in() {
