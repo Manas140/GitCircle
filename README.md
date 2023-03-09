@@ -5,4 +5,4 @@
   - [who-unfollowed-me](https://github.com/msaaddev/who-unfollowed-me)
 
 ## Special Thanks
-  - [Soup_Foo](https://github.com/soupfoo) For name & testing
+  - [Soup_Foo](https://github.com/soupfoo) For Naming & Testing GitCircle 
