@@ -69,6 +69,7 @@ input, button {
 .card img {
   border-radius: 100%;
   height: 5em;
+  width: 5em;
 }
 
 .card div {
