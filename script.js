@@ -84,6 +84,14 @@ async function update(user) {
     page_num += 1;
   }
 
+  if (called == true) {
+    const img = document.querySelectorAll('img');
+    img.forEach(e => {
+      const url = e.getAttribute('data-src');
+      e.src = url;
+    });
+  }
+
   if (start == true && called == false ) {
     main.innerHTML = `
       <div class='dialog'>
@@ -111,10 +119,10 @@ function err(err) {
 }
 
 function create_card(name, status) {
-  if (first != true) {
+  if (first != true){
     main.innerHTML += `
       <a href="https://github.com/${name}" target='_blank' class='card'>
-        <img src="https://github.com/${name}.png" alt="./pfp">
+        <img src="./temp.png" data-src="https://github.com/${name}.png" alt="">
         <div>
           <h2>${name}</h2>
           <p>${status} You</p>
